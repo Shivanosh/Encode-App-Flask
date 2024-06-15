@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Decode Message</h1>
+<form action="/decode" method="post" enctype="multipart/form-data">
+    <input type="file" name="encoded_file" required><br>
+    <button type="submit" class="decode-btn">Decode</button>
+</form>
+<br>
+<a href="/">Go Back</a>
+{% endblock %}

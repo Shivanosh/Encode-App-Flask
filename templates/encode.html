@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Encode Message</h1>
+<form action="/generate_key" method="post">
+    <button type="submit">Generate New Key</button>
+</form>
+<br>
+<form action="/encode" method="post">
+    <textarea name="text" rows="10" cols="50" placeholder="Enter text to encode" required></textarea><br>
+    <button type="submit" class="encode-btn">Encode</button>
+</form>
+<br>
+<a href="/">Go Back</a>
+{% endblock %}
